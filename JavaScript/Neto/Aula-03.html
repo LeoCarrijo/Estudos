@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../Images/javascript.ico" type="image/x-icon">
+    <title>Olá Mundo!</title>
+    <style>
+        body{
+            font: normal 16pt Arial;
+            background-color: rgb(154, 255, 255);
+        }
+        header{
+            text-align: center;
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            border-radius: 10px;
+            padding: 5px 10px;
+            min-width: 400px;
+            max-width: 700px;
+            margin: auto;
+        }
+        main p {
+            text-align: center;
+        }
+        footer{
+            text-align: center;
+            margin-top: 10px;
+        }
+        a{
+            text-decoration: none;
+            font-size: 15pt;
+            transition: 0.3s;
+            color: rgba(99, 99, 99, 0.666);
+        }
+        a:hover{
+            font-size: 16pt;
+            text-decoration: underline;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Olá, Mundo!</h1>
+    </header>
+    <main>
+        <h2>Título</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, commodi rerum? Quibusdam quisquam quas quo soluta quaerat corrupti! Molestiae ex voluptatum quos voluptatem cumque esse ullam! Eius odio est dolor.
+        </p>
+        <h2>Título</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem explicabo minima eius molestias ab vel ullam, iusto earum modi officia, culpa quas, soluta dicta. Molestias reprehenderit facere placeat rerum suscipit.
+        </p>
+    </main>
+    <footer>
+        <em><a href="#">@WhySoulers</a></em>
+    </footer>
+
+    <script>
+        let nome = prompt('Qual o seu nome?')
+
+        const nomeH2 = document.createElement('h2')
+        nomeH2.setAttribute('id', 'nome')
+        nomeH2.textContent = 'Vai toma no seu cu ' + nome
+        document.querySelector('main').appendChild(nomeH2)
+    </script>
+</body>
+</html>
