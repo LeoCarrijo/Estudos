@@ -26,6 +26,19 @@
         main p {
             text-align: center;
         }
+        div#video{
+            background-color: green;
+            padding: 5px;
+            padding-bottom: 50%;
+            position: relative;           
+        }
+        div#video > iframe{
+            position: absolute;
+            width: 95%;
+            height: 95%;
+            top: 2.5%;
+            left: 2.5%;
+        }
         footer{
             text-align: center;
             margin-top: 10px;
@@ -56,13 +69,17 @@
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem explicabo minima eius molestias ab vel ullam, iusto earum modi officia, culpa quas, soluta dicta. Molestias reprehenderit facere placeat rerum suscipit.
         </p>
+        <h2>Título</h2>
+        <div id="video">
+            <iframe width="300" height="160" src="https://www.youtube.com/embed/k1ko54obItU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </main>
     <footer>
         <em><a href="#">@WhySoulers</a></em>
     </footer>
 
     <script>
-        let nome = prompt('Qual o seu nome?')
+        //let nome = prompt('Qual o seu nome?')
 
         const nomeH2 = document.createElement('h2')
         nomeH2.setAttribute('id', 'nome')
