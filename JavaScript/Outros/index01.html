@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font: normal 16pt Arial;
+            background-color: aqua;
+            margin: 10px;
+        }
+        header{
+            text-align: center;
+        }
+        main{
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 6px 6px 12px;
+            max-width: 1200px;
+            padding: 10px;
+        }
+        main div{
+            text-align: justify;
+        }
+        main h2{
+            margin: 10px 0px;
+        }
+        h2#secTit{
+            text-align: center;
+        }
+        section{
+            column-count: 2;
+        }
+        div#video{
+            background-color: rgb(56, 122, 255);
+            position: relative;
+            padding: 50%;
+        }
+        iframe{
+            position: absolute;
+            top: 2.5%;
+            left: 2.5%;
+            width: 95%;
+            height: 95%;
+        }
+        footer{
+            text-align: center;
+            margin: 5px 0px;
+        }
+        footer a{
+            text-decoration: none;
+            color: gray;
+            font-size: 15pt;
+            transition: 0.3s;
+        }
+        footer a:hover{
+            font-size: 16pt;
+            color: black;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lorem</h1>
+    </header>
+    <main>
+        <h2 id="secTit">Título</h2>
+        <section>
+            <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto repellendus dolore animi ad obcaecati. Commodi obcaecati nemo soluta repudiandae, explicabo ad, quod numquam eaque velit perspiciatis iste voluptatum sit omnis.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptatibus illo optio iure nisi, eos alias cumque, obcaecati consequuntur, ab minus delectus officia eaque! Ad consectetur ut accusantium vero minus.</p>
+            </div>
+        </section>
+        <h2>Título</h2>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, expedita debitis labore molestias ad nesciunt eos sapiente beatae dolor eveniet, sit deserunt quidem velit nihil vel nulla ipsam at veniam!</p>
+            <div id="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GTHpyZneL3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <em><a href="#">@WhySoulers</a></em>
+    </footer>
+</body>
+</html>
