@@ -4,16 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercícios Liene</title>
+    <title>Exercícios</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        table, td, tr {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
     <header>
 
     </header>
     <main>
-        <div id="exercicios">
-            <p></p>
-        </div>
+        
     </main>
+    <footer>
+
+    </footer>
+
+    <script>
+        const tabHtml = document.createElement('table')
+        tabHtml.setAttribute('id', 'tabela')
+        document.querySelector('main').appendChild(tabHtml)
+        let j = 0
+        for (let i = 0; i < 10; i++){
+            const tdHtml = document.createElement('td')
+            tdHtml.setAttribute('id', `linha${i}`)
+            tdHtml.textContent = `Índice${i}`
+            document.querySelector('table#tabela').appendChild(tdHtml)
+            for(let j = 0; j < 3; j++){
+                const trHtml = document.createElement('tr')
+                trHtml.setAttribute('class', 'colunas')
+                trHtml.textContent = `Ola mundo${i + j}`
+                document.querySelector(`td#linha${i}`).appendChild(trHtml)
+            }
+        }
+    </script>
 </body>
 </html>
