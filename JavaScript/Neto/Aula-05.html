@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+</head>
+<body>
+    <h1>Calculadora e Operações</h1>
+</body>
+
+    <script>
+        let val1, val2, op
+
+        val1 = Number(prompt('Digite um valor:'))
+        op = prompt('Qual operação você quer fazer? (+, -, /, *)')
+        val2 = Number(prompt('Digite o segundo valor:'))
+
+        document.write(`O resultado de ${val1} ${op} ${val2} é igual à ${Operacao(val1, op, val2)}`)
+
+        function Operacao(val1, op, val2){
+            let res = 0
+
+            switch(op){
+                case '+':
+                    res = Somar(val1 + val2)
+                    break
+                case '-':
+                    res = Subtrair(val1, val2)
+                    break
+                case '/':
+                    res = Dividir(val1, val2)
+                    break
+                case '*':
+                    res =  Multiplicar(val1, val2)
+                    break
+                default:
+                    res = '(OPERAÇÃO INVÁLIDA)'
+            }
+
+            return Number(res)
+        }
+
+        function Somar(val1, val2){
+            return val1 + val2
+        }
+
+        function Subtrair(val1, val2){
+            if(val1 < val2){
+                return val2 - val1
+            }else{
+                return val1 - val2
+            }
+        }
+
+        function Dividir(val1, val2){
+            return val1 / val2
+        }
+
+        function Multiplicar(val1, val2){
+            return val1 * val2
+        }
+    </script>
+</html>
