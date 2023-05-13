@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decisão If Else</title>
+</head>
+<body>
+    <!--
+    <script>
+        let dia = Number(prompt('Digite um número entre 1 e 7:')) //"Prompt" pega um valor do usuário e o "Number" transforma o valor (que está em String) em uma variável numérica
+
+        if(isNaN(dia)){ //Verificamos se o valor colocado é um número
+            alert('Dado Inválido!')
+        }else if(dia > 7 || dia < 1){ //Verificamos se o valor está dentro dos parâmetros do código
+            alert('Dia informado fora dos parâmetros da semana')
+        }else{ //Caso o valor seja válido, vamos então testar para ver qual dia ele é:
+            document.write('Dado numérico válido! <br> <br>')//<br> Quebram uma linha em HTML "<Break Row>"
+
+            if(dia == 1){
+                document.write('Domingo') //Caso variável "dia" for 1 = Domingo
+            }else if(dia == 2){
+                document.write('Segunda-Feira') //Caso variável "dia" for 2 = Segunda-Feira
+            }else if(dia == 3){
+                document.write('Terça-Feira') //Caso variável "dia" for 3 = Terça-Feira
+            }else if(dia == 4){
+                document.write('Quarta-Feira') //Caso variável "dia" for 4 = Quarta-Feira
+            }else if(dia == 5){
+                document.write('Quinta-Feira') //Caso variável "dia" for 5 = Quinta-Feira
+            }else if(dia == 6){
+                document.write('Sexta-Feira') //Caso variável "dia" for 6 = Sexta-Feira
+            }else if(dia == 7){
+                document.write('Sábado') //Caso variável "dia" for 7 = Sábado
+            }
+        }
+    </script>
+    -->
+    <script>
+        let respondido = false
+
+        while (!respondido){
+            let dia = Number(prompt('Digite um número entre 1 e 7:')) //"Prompt" pega um valor do usuário e o "Number" transforma o valor (que está em String) em uma variável numérica
+            switch(dia){
+                case 1:
+                    document.write('Domingo')
+                    respondido = true
+                    break
+                case 2:
+                    document.write('Segunda-Feira')
+                    respondido = true
+                    break
+                case 3:
+                    document.write('Terça-Feira')
+                    respondido = true
+                    break
+                case 4:
+                    document.write('Quarta-Feira')
+                    respondido = true
+                    break
+                case 5:
+                    document.write('Quinta-Feira')
+                    respondido = true
+                    break
+                case 6:
+                    document.write('Sexta-Feira')
+                    respondido = true
+                    break
+                case 7:
+                    document.write('Sábado')
+                    respondido = true
+                    break
+                default:
+                    alert('O valor foi inválido')
+                    break
+            }
+        }
+    </script>
+</body>
+</html>
