@@ -8,9 +8,11 @@
 body{
     font: normal 12pt Arial;
     background-color: rgb(123, 240, 255);
+    margin: 10px;
 }
 hr{
     border-color: black;
+    margin: 10px 0px;
 }
 header{
     text-align: center;
@@ -23,7 +25,7 @@ main{
     min-width: 300px;
     max-width: 1000px;
     height: 300px;
-    margin: 10px;
+    margin: auto;
     padding: 10px;
     border-radius: 10px;
 }
@@ -35,7 +37,7 @@ input.numInp{
     text-align: center;
     font-style: italic;
 }
-input#botao {
+input#botao{
     color: #14396A;
     font-size: 14px;
     text-shadow: 1px 1px 0px #7CACDE;
@@ -46,9 +48,17 @@ input#botao {
     border: 2px solid #3866A3;
     background: #63B8EE;
     background: linear-gradient(to top, #63B8EE, #468CCF);
-  }
-  input#botao:hover {
+}
+input#botao:hover{
     color: #14396A;
     background: #468CCF;
     background: linear-gradient(to top, #468CCF, #63B8EE);
-  }
+}
+footer{
+    text-align: center;
+    margin-top: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
