@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-06</title>
+</head>
+<body>
+    <main id="dados">
+
+    </main>
+
+    <script>
+        let str = prompt('Digite uma String:')
+        let main = document.querySelector('main#dados')
+        
+        main.innerHTML = `String Informada: ${str}<br><br>`
+
+        PercorrerStr(str)
+        main.innerHTML += '<br><br>'
+        AoContrario(str)
+
+        function PercorrerStr(str){
+            let len = str.length
+            main.innerHTML += `A String tem um tamanho de ${len} caracteres.<br><br>`
+
+            for(let i = 0; i < len; i++){
+                if(i == len - 1){
+                    main.innerHTML += `${str.substr(i, 1)}`
+                }else{
+                    main.innerHTML += `${str.substr(i, 1)} - `
+                }
+            }
+        }
+
+        function AoContrario(str){
+            let len = str.length
+            main.innerHTML += `A String tem um tamanho de ${len} caracteres.<br><br>`
+
+            for(let i = len; i >= 0; i--){
+                if(i == 0 || i == len){
+                    main.innerHTML += `${str.substr(i, 1)}`
+                }else{
+                    main.innerHTML += `${str.substr(i, 1)} - `
+                }
+            }
+        }
+    </script>
+</body>
+</html>
