@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100%;
+    font: normal 12pt Arial;
+    background-color: rgb(224, 99, 124);
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+header{
+    text-align: center;
+}
+header, h1, h2, h3{
+    padding: 12px;
+}
+
+hr{
+    border: solid 1px black;
+    margin: 10px 0px;
+}
+
+main{
+    border-radius: 50px;
+    border: solid 1px black;
+    background: #e0e0e0;
+    box-shadow:  7px 10px 20px #bebebe;
+    min-width: 300px;
+    max-width: 900px;
+    height: 500px;
+    padding: 20px;
+    margin: auto;
+}
+
+input.numImp{
+    font: italic 12pt Arial;
+    text-align: center;
+    width: 110px;
+    height: 20px;
+    border: solid 1px blueviolet;
+    border-radius: 5px;
+}
+
+input.botao{
+    width: 80px;
+    height: 40px;
+    font-size: 11pt;
+    margin-top: 10px;
+    border: solid 1px pink;
+    border-radius: 7px;
+    transition: 0.2s;
+    background-image: linear-gradient(to bottom, rgb(255, 180, 42), rgb(253, 109, 109));
+}
+input.botao:hover{
+    font-size: 12pt;
+    width: 85px;
+    height: 45px;
+    border: solid 2px pink;
+    background-image: linear-gradient(to bottom, rgb(253, 109, 109), rgb(255, 180, 42));
+}
+
+footer{
+    text-align: center;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.3s;
+    color: rgb(63, 63, 63);
+    font-size: 15pt;
+}
+a:hover{
+    font-size: 16pt;
+    color: black;
+    text-decoration: underline;
+}
