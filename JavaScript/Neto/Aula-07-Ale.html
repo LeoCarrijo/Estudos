@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../Images/javascript.ico" type="image/x-icon">
+    <title>Calcula Média</title>
+    <style>
+        @charset "UTF-8";
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            font: normal 12pt Arial;
+            background-color: rgb(123, 240, 255);
+            margin: 10px;
+        }
+        hr{
+            border-color: black;
+            margin: 10px 0px;
+        }
+        header{
+            text-align: center;
+        }
+        header h1, h2, h3{
+            padding: 12px;
+        }
+        main{
+            background-color: white;
+            min-width: 300px;
+            max-width: 1000px;
+            height: 300px;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Calculo de Média - Aula-07</h1>
+        <h2>Linguagem de Programação</h2>
+    </header>
+    <hr>
+    <main>
+        
+    </main>
+
+    <script>
+        let valores = [], num = 0, min = 1, max = 10
+        let mainDiv = document.querySelector('main')
+
+        for(let i = 1; i <= 10; i++){
+            num = Math.floor(Math.random() * (min + max) + min)
+            if(valores.includes(num)){
+                //nada
+            }else{
+                valores.push(num)
+            }
+        }
+        
+        mainDiv.innerHTML += `${valores}`
+    </script>
+</body>
+</html>
