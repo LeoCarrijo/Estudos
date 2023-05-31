@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../Images/javascript.ico" type="image/x-icon">
+    <title>Exercício Teste</title>
+</head>
+<body>
+    <header>
+        <h1>Página Teste</h1>
+        <h2>Alguma coisa de texto</h2>
+        <h3>Tags que dificilmente usam</h3>
+    </header>
+    <hr>
+    <main>
+
+    </main>
+    <footer>
+        <a href="#"><em>@WhySouler</em></a>
+    </footer>
+
+    <script>
+        const tabela = document.createElement('table')
+        tabela.setAttribute('id', 'tabela')
+        document.querySelector('main').appendChild(tabela)
+        tabela.style.border = '1px solid black'
+        for(let i = 0; i < 10; i++){
+            const tdHtml = document.createElement('td')
+            tdHtml.setAttribute('id', `linha${i}`)
+            tdHtml.textContent = `Índice ${i}`
+            tdHtml.style.textAlign = 'center'
+            document.querySelector('table#tabela').appendChild(tdHtml)
+            for(let j = 0; j < 5; j++){
+                const trHtml = document.createElement('tr')
+                trHtml.setAttribute('class', 'colunas')
+                trHtml.textContent = `Olá, Mundo ${i + j}`
+                document.querySelector(`td#linha${i}`).appendChild(trHtml)
+            }
+        }
+    </script>
+</body>
+</html>
