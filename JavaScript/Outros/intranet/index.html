@@ -18,19 +18,14 @@
             
         }
 
-        section#barra1{
-            background-color: rgb(197, 187, 171);
-            position: fixed;
-            width: 300px;
-            height: 1000px;
-        }
-
         header{
             text-align: center;
             padding: 30px 0px;
+            background-image: linear-gradient(to bottom, white, white, white, white, rgb(230, 230, 230));
+            position: relative;
         }
         header h1{
-            background-image: linear-gradient(to bottom, white, white, white, white, rgb(230, 230, 230));
+            margin-bottom: 14px;
         }
         .logo{
             width: 100px;
@@ -43,56 +38,73 @@
             height: 1000px;
             background-repeat: no-repeat;
         }
+        main section {
+            margin: auto;
+            background-color: rgba(255, 243, 220, 0.575);
+            max-width: 00px;
+            min-width: 250px;
+        }
 
         nav{
+            background-color: rgb(230, 230, 230);
             box-shadow: 2px 0px 5px;
             text-align: center;
-            margin: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            position: absolute;
+            bottom: -16px;
             border-radius: 10px;
-            width: fit-content;
         }
         nav a{
-                text-decoration: none;
-                transition: .3s;
-                padding: 5px 10px;
-                display: inline-block;
+            text-decoration: none;
+            transition: .3s;
+            padding: 5px 10px;
+            display: inline-block;
         }
         nav a::after{
-                content: '';
-                width: 0%;
-                height: 2px;
-                background: #f44336;
-                display: block;
-                margin: auto;
-                transition: 0.5s;
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
         }
         nav a:hover::after{
-                width: 100%;
+            width: 100%;
         }
         nav a:hover{
-                color: black;
-                padding: 0px 20px;
+            color: black;
+            padding: 0px 20px;
         }
     </style>
 </head>
 <body>
-    <section id="barra1"></section>
-    <section id="barra2"></section>
     <header>
         <h1>
-            <img class="logo" src="../../../Images/tiptoeyjoey.png" alt="TipToeyJoey Logo">
+            <a href="https://tiptoeyjoey.com"><img class="logo" src="../../../Images/tiptoeyjoey.png" alt="TipToeyJoey Logo"></a>
             <p>Tip Toey Joey<br>Intranet</p>
         </h1>
         <nav>
-            <ul>
-                <a href="#">Abertura de Chamados &#x1f6e0</a>
-                <a href="#">Base do Conhecimento &#x1f4d6</a>
-                <a href="#">Ramais Matriz &#x260e</a>
-                <a href="#">Ramais Filial &#x260e</a>
+            <a href="#">Abertura de Chamados &#x1f6e0</a>
+            <a href="#">Base do Conhecimento &#x1f4d6</a>
+            <a href="#">Ramais Matriz &#x260e</a>
+            <a href="#">Ramais Filial &#x260e</a>
+            <a href="#">Procedimentos &#x260e</a>
         </nav>
     </header>       
     <main>
-        
+        <section>
+            <h2>Lorem Ipsum</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam totam, corporis impedit quos commodi porro omnis accusantium asperiores adipisci vitae tempore fugit accusamus itaque voluptate voluptatibus optio exercitationem ex earum.
+            </p>
+            <h2>Lorem Ipsum</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam totam, corporis impedit quos commodi porro omnis accusantium asperiores adipisci vitae tempore fugit accusamus itaque voluptate voluptatibus optio exercitationem ex earum.
+            </p>
+        </section>
     </main>
     <footer>
 
