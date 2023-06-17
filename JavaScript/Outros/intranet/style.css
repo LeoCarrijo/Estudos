@@ -29,6 +29,7 @@ main{
     background-image: url('../../../Images/background.jpg');
     height: 1000px;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 main section {
     margin: auto;
