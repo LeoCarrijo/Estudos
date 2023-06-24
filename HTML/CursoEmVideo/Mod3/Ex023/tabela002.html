@@ -10,6 +10,7 @@
         }
 
         table {
+            position: relative;
             width: 500px;
             border-collapse: collapse;
         }
@@ -23,6 +24,12 @@
 
         tbody tr:nth-child(2n) {
             background-color: lightgray;
+        }
+
+        thead tr th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
 
         thead, tfoot {
