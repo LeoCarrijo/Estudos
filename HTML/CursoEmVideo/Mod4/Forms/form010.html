@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Cadastro</legend>
+            <p>
+                <label for="ano">Ano de Nascimento: </label>
+                <input type="number" name="ano" id="ano" min="1900" max="2023" value="2000" oninput="Calcular()">
+            </p>
+            <p>
+                <label for="idade">Idade: </label>
+                <output id="idade"></output>
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
+
+    <script>
+        function Calcular(){
+            const data = new Date()
+            let anoAtual = data.getFullYear()
+            let ano = document.querySelector('input#ano')
+            let output = document.querySelector('output#idade')
+            output.innerHTML = anoAtual - Number(ano.value)
+        }
+    </script>
+
+</body>
+</html>
