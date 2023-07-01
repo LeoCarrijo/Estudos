@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@import url('https://fonts.cdnfonts.com/css/gotham-rounded');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gotham Rounded', sans-serif;
+
+    --cor1: #000000;
+    --cor2: #2F4550;
+    --cor3: #586F7C;
+    --cor4: #FEF9EF;
+    --cor5: #749C75;
+}
+
+header {
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor4) 75%, #c9c4b9 );
+}
+header img {
+    padding-top: 50px;
+    width: 20vw;
+}
+header h2 {
+    font-size: 4vw;
+    padding-bottom: 50px;
+}
+header menu li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 3px 7px;
+}
+header menu li a {
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+    font-variant: small-caps;
+    font-size: 1.1em;
+}
+header menu li a:hover {
+    padding: 0px 7px;
+}
+header menu li a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #f44336;
+    margin: auto;
+    transition: .5s;
+}
+header menu li a:hover::after {
+    width: 100%;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: var(--cor1);
+}
+footer p, footer a {
+    color: white;
+}
