@@ -13,16 +13,22 @@
     --cor5: #749C75;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 header {
     text-align: center;
     background-image: linear-gradient(to bottom, var(--cor4) 75%, #c9c4b9 );
+    max-height: 700px;
 }
 header img {
     padding-top: 50px;
-    width: 20vw;
+    width: 225px;
+    height: 225px;
 }
 header h2 {
-    font-size: 4vw;
+    font-size: 3em;
     padding-bottom: 50px;
 }
 header menu li{
@@ -51,6 +57,15 @@ header menu li a::after {
 }
 header menu li a:hover::after {
     width: 100%;
+}
+
+main {
+    
+}
+main iframe {
+    margin: 10px 0px;
+    width: 100vw;
+    height: 51vh;
 }
 
 footer {
