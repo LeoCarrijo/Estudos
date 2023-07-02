@@ -6,37 +6,51 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html {
-    height: 100vh;
-}
-
-body {
+body, html {
     background-color: lightgray;
 }
 
 header {
     background-color: gray;
+    margin-bottom: 10px;
 }
 header h1 {
     padding: 10px 0px;
     text-align: center;
 }
-header menu li {
-    display: inline-block;
+header menu {
+    display: block;
+    display: none;
+}
+header menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
     background-color: rgb(88, 88, 88);
     padding: 10px;
     border-top: 2px solid rgb(145, 145, 145);
 }
-header menu li a {
-    text-decoration: none;
-    color: white;
-}
-header menu li:hover {
+header menu ul li a:hover {
     background-color: rgb(150, 150, 150);
 }
 
+i#burger {
+    background-color: rgb(63, 63, 63);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+i#burger:hover {
+    background-color: white;
+    color: black;
+}
+
 main {
-    margin: 10px;
+    width: 90vw;
+    margin: auto;
 }
 main section {
     background-color: white;
