@@ -34,14 +34,26 @@ header h1, header h3 {
 header menu ul li {
     font-family: var(--fonte-sserif);
     font-size: 1.1em;
-    display: inline-block;
     padding: 5px 10px;
 }
 header menu ul li a {
+    display: inline-block;
     text-decoration: none;
     color: var(--cor1);
     text-shadow: 1px 1px 0px #ad711cab;
     transition: .3s;
+}
+i#burger {
+    color: var(--cor1);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+i#burger:hover {
+    background-color: var(--cor2);
+    color: black;
 }
 header menu ul li a:hover {
     font-size: 1.2em;
