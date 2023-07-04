@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --cor1: #ffa62b;
+    --cor2: #ede7e3;
+    --cor3: #82c0cc;
+    --cor4: #489fb5;
+    --cor5: #16697a;
+    --fonte-padrao: 'Noto Serif', serif;
+    --fonte-sserif: 'Belanosima', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3) 60%, var(--cor4));
+    text-align: center;
+    box-shadow: 2px 2px 10px #0d3f49;
+}
+header h1 {
+    padding: 30px 0px 10px;
+    font-family: var(--fonte-padrao)
+}
+header h3 {
+    padding-bottom: 30px;
+}
+header h1, header h3 {
+    text-shadow: 1px 1px 0px rgba(61, 61, 61, 0.541);
+}
+header menu ul li {
+    font-family: var(--fonte-sserif);
+    font-size: 1.1em;
+    display: inline-block;
+    padding: 5px 10px;
+}
+header menu ul li a {
+    text-decoration: none;
+    color: var(--cor1);
+    text-shadow: 1px 1px 0px #ad711cab;
+    transition: .3s;
+}
+header menu ul li a:hover {
+    font-size: 1.2em;
+}
+header menu ul li a::after {
+    content: '';
+    width: 0%;
+    background-color: var(--cor2);
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: .3s;
+}
+header menu ul li a:hover::after {
+    width: 100%;
+}
+
