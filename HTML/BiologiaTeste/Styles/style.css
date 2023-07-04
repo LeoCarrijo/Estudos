@@ -110,6 +110,9 @@ main article {
 main article p{
     text-align: justify;
     font-family: var(--fonte-texto);
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #ffffff8e;
 }
 main article p , h2.titulo{
     text-indent: 35px;
