@@ -18,6 +18,10 @@
     padding: 0px;
 }
 
+body {
+    background-color: var(--cor3);
+}
+
 header {
     background-image: linear-gradient(to bottom, var(--cor3) 60%, var(--cor4));
     text-align: center;
@@ -65,7 +69,7 @@ i#burger:hover {
 header menu ul li a:hover {
     font-size: 1.2em;
 }
-header menu ul li a::after {
+header menu ul li a::after, footer a::after {
     content: '';
     width: 0%;
     background-color: var(--cor2);
@@ -74,20 +78,21 @@ header menu ul li a::after {
     margin: auto;
     transition: .3s;
 }
-header menu ul li a:hover::after {
+header menu ul li a:hover::after, footer a:hover::after {
     width: 100%;
 }
 
 main {
     margin: auto;
     max-width: 1000px;
-    background-color: gray;
 }
 h2.titulo {
     display: block;
     font-family: var(--fonte-padrao);
     margin: 10px 0px;
     font-variant: small-caps;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.459);
+    font-size: 2em;
 }
 h2.titulo::before{
     content: '- ';
@@ -146,4 +151,20 @@ table caption {
 }
 th, td {
     border: 1px solid #000;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    color: white;
+    padding: 5px 0px;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    transition: .3s;
+}
+footer a:hover {
+    font-size: 1.1em;
 }
