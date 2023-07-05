@@ -18,16 +18,17 @@ Grandes Telas: acima de 1200px
 }
 
 
-@media (769px <= width <= 992px) {
-    
-}
-
-
-@media (993px <= width <= 1200px) {
-
-}
-
-
-@media (1200px < width) {
-
+@media (width > 768px) {
+    i#burger {
+        display: none;
+    }
+    menu#itens {
+        display: block;
+    }
+    menu ul li {
+        display: inline-block;
+    }
+    main {
+        width: 768px;
+    }
 }

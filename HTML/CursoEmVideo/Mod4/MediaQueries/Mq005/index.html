@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="Styles/mediaqueries.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 </head>
-<body>
+<body onresize="ChangeSize()">
     <header>
         <h1>Meu Site</h1>
         <i id="burger" class="material-icons" onclick="ClickMenu()">menu</i>
@@ -47,6 +47,14 @@
                 itens.style.display = 'none'
             }else{
                 itens.style.display = 'block'
+            }
+        }
+
+        function ChangeSize(){
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
             }
         }
     </script>
