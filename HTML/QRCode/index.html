@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            margin: 10px;
+        }
+        
+        main form {
+            line-height: 30px;
+        }
+
+        main form input#button {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #000;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="" method="get" autocomplete="off">
+            <label for="content">Conteúdo do QRCode: </label>
+            <input type="text" name="content" id="content" required>
+            <br>
+            <input type="button" onclick="GerarQRCode()" value="Gerar QRCode" id="button">
+        </form>
+        <div id="qrcode"></div>
+
+
+        <script src="qrcode.min.js"></script>
+        <script>
+            function GerarQRCode() {
+                let content = document.querySelector('input#content').value
+                let qrcodeDiv = document.querySelector('div#qrcode')
+
+                qrcodeDiv.innerHTML = ''
+                qrcodeDiv = new QRCode(document.querySelector('div#qrcode'), {
+                    text: content,
+                    width: 300,
+                    height: 300,
+                    correctLevel: QRCode.CorrectLevel.H
+                })
+            }
+        </script>
+    </main>
+</body>
+</html>
