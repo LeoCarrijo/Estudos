@@ -43,7 +43,7 @@
         }
 
         main form input#button {
-            margin-top: 20px;
+            margin: 20px 0px;
             padding: 5px;
             border-radius: 5px;
             border: 1px solid #000;
@@ -63,13 +63,15 @@
 
         main div#qrcode {
             text-align: center;
-            margin-top: 20px;
+            margin: auto;
             background-color: white;
-            padding: 20px 45px;
+            padding: 20px 20px;
+            width: 300px;
             line-height: 40px;
             border-radius: 10px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.418);
         }
+
     </style>
 </head>
 <body>
@@ -93,6 +95,7 @@
                 let qrcodeDiv = document.querySelector('div#qrcode')
 
                 qrcodeDiv.innerHTML = '<h2>'+content+'</h2>'
+                document.querySelector('h2').style.marginBottom = '20px'
                 qrcodeDiv = new QRCode(document.querySelector('div#qrcode'), {
                     text: content,
                     width: 300,
