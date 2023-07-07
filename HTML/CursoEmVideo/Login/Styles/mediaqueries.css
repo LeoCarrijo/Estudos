@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@media (768px <= width <= 992px) {
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    section#login {
+        width: 80vw;
+    }
+
+    section#login aside#imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    section#login article#form {
+        float: right;
+        width: 70%;
+    }
+}
+
+@media (993px <= width) {
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    section#login {
+        width: 990px;
+    }
+
+    section#login aside#imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#login article#form {
+        float: right;
+        width: 50%;
+    }
+}
