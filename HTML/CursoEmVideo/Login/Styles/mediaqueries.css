@@ -31,13 +31,21 @@
     }
 
     section#login aside#imagem {
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
     }
 
     section#login article#form {
-        float: right;
+        float: left;
         width: 50%;
+    }
+
+    article#form h1 {
+        font-size: 2em;
+    }
+    
+    article#form p {
+        font-size: 1.2em;
     }
 }

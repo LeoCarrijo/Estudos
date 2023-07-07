@@ -47,3 +47,12 @@ section#login article#form {
     display: block;
     padding: 10px;
 }
+
+article#form h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+article#form p {
+    font-size: 0.8em;
+}
