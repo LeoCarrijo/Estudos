@@ -20,6 +20,10 @@
         float: right;
         width: 70%;
     }
+
+    div.campo input {
+        transform: translateY(-12px);
+    }
 }
 
 @media (993px <= width) {
@@ -30,6 +34,10 @@
     section#login {
         width: 990px;
         height: 350px;
+    }
+
+    div.campo input {
+        transform: translateY(-12px);
     }
 
     section#login aside#imagem {
