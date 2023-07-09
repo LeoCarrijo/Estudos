@@ -1,8 +1,8 @@
-import os
+from os import system as sys
 
 n = int(input('Digite um número para calcular seu fatorial: '))
 cont = n
-os.system('cls')
+sys('cls')
 print(f'{n}! = ', end='')
 while cont != 1:
     cont -= 1
