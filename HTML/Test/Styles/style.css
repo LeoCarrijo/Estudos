@@ -62,6 +62,9 @@ header i#burger {
     border-top: 1px solid #0B7349;
     border-bottom: 1px solid #0B7349;
 }
+header menu {
+    display: none;
+}
 header menu ul li a {
     text-decoration: none;
     display: block;
