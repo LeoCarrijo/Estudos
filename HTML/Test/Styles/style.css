@@ -18,6 +18,10 @@ body {
     background-color: var(--verdeClaro);
 }
 
+main {
+    position: relative;
+}
+
 header {
     background-image: linear-gradient(to bottom, var(--verdeClaro), var(--verdeBase));
     box-shadow: 0px 0px 10px var(--verdeEscuro);
@@ -81,18 +85,22 @@ header menu ul li a:hover {
 }
 
 section.campo {
+    display: flex;
     background-color: #fff;
     margin: auto;
     margin-top: 30px;
-    padding: 10px;
     border-radius: 8px;
     box-shadow: 0px 1px 10px #0b734980;
     width: 90vw;
     transition-timing-function: ease;
     overflow: hidden;
 }
+section.campo article.texto {
+    padding: 10px;
+}
+
 aside#imagem {
     display: block;
-    background: white url(../Images/WhySoulersLogo.png) center center / contain no-repeat scroll;
+    background: var(--verdeClaro) url(../Images/WhySoulersLogo.png) center center / cover no-repeat scroll;
     height: 200px;
 }
