@@ -103,12 +103,20 @@ section.campo article.texto {
     text-align: justify;
 }
 
-aside#imagem {
+aside.imagem {
     background: var(--verdeClaro) url(../Images/WhySoulersLogo.png) center center / cover no-repeat scroll;
     width: 40%;
 }
 
-aside#imagem2 {
-    background: var(--verdeClaro) url(../Images/WhySoulersLogo.png) center center / cover no-repeat scroll;
-    width: 40%;
+footer {
+    background-color: black;
+    display: block;
+    text-align: center;
+}
+footer p {
+    color: white;
+}
+footer a {
+    text-decoration: none;
+    color: white;
 }
