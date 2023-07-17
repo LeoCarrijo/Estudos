@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@media (768px <= width <= 992px) {
+    body {
+        background-color: #fff;
+    }
+
+    i#burger {
+        display: none;
+    }
+
+    header menu {
+        display: block;
+    }
+
+    aside.imagem {
+        width: 70%;
+    }
+}
