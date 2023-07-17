@@ -19,7 +19,9 @@ body {
 }
 
 main {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 header {
@@ -84,10 +86,9 @@ header menu ul li a:hover {
     font-size: 1.05em;
 }
 
-section.campo {
+section.campo, section.campo-sem-texto {
     display: flex;
     flex-direction: row;
-    
     background-color: #fff;
     margin: auto;
     margin-top: 30px;
@@ -102,6 +103,14 @@ section.campo article.texto {
     padding: 10px;
     text-align: justify;
 }
+section.campo-sem-texto article.texto {
+    padding: 10px;
+    text-align: justify;
+}
+section.campo-sem-texto article.texto h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
 
 aside.imagem {
     background: var(--verdeClaro) url(../Images/WhySoulersLogo.png) center center / cover no-repeat scroll;
@@ -110,6 +119,7 @@ aside.imagem {
 
 footer {
     background-color: black;
+    margin-top: 20px;
     display: block;
     text-align: center;
 }
