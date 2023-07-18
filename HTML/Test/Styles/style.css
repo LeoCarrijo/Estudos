@@ -59,8 +59,8 @@ header h3 abbr:hover::after {
     width: 100%;
 }
 header i#burger {
-    cursor: pointer;
     display: block;
+    cursor: pointer;
     text-align: center;
     background-color: #0b73497c;
     padding: 10px 0px;
