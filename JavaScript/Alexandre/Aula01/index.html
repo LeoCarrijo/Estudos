@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Dados :P</title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #cabecalho {
+            text-align: center;
+        }
+
+        #principal {
+            display: grid;
+            grid-template-areas: 
+            "form form output";
+            grid-template-columns: repeat(2, 1fr) 1fr;
+            grid-template-rows: repeat(3, 100vh);
+            gap: 10px;
+            margin: 20px;
+        }
+
+        .formulario {
+            grid-area: form;
+            background-color: #8b8b8b;
+        }
+
+        #output {
+            grid-area: output;
+            background-color: #bdb9b9;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <h1 class="titulo" >Variáveis JavaScript</h1>
+    </header>
+    <main id="principal">
+        <form class="formulario">
+            <label for="nome">Nome: </label>
+            <input type="text" class="entrada" id="nome" name="nome">
+
+            <input type="button" onclick="Cadastrar()" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+
+        <div id="output"></div>
+    </main>
+    <script>
+        var cadastro = {
+            nome: "Leozin do Grau",
+            idade: 12,
+            peso: 225.50,
+            empregado: true
+        }
+        
+        function Cadastrar() {
+            var nome = document.querySelector('input#nome').value
+            cadastro.nome = nome
+            Mostrar(cadastro.nome)
+        }
+
+        function Mostrar(item) {
+            var output = document.querySelector('div#output')
+            output.innerHTML = item
+        }
+    </script>
+</body>
+
+</html>
