@@ -36,6 +36,9 @@
     blocoOutput.innerHTML += `Logo, o valor da taxa de 10% do garçom foi de ${taxa}`
     QuebrarLinha(blocoOutput)
 
+    var numero = PegarNum('Digite um valor para ver seus vizinhos:', 0)
+    blocoOutput.innerHTML += `Os vizinhos de ${numero} são ${numero + 1} e ${numero - 1}`
+    QuebrarLinha(blocoOutput)
     
 
     function PegarNum(msg, pos) {
