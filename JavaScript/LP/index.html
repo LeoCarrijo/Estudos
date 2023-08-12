@@ -13,33 +13,37 @@
 
 <script>
     var blocoOutput = document.createElement('div.output')
-    var num = PegarNum('Digite um número positivo:', 1)
+    // var num = PegarNum('Digite um número positivo:', 1)
 
-    blocoOutput.innerHTML += "O Dobro do número é "
+    // blocoOutput.innerHTML += "O Dobro do número é "
     document.querySelector('body').appendChild(blocoOutput)
-    blocoOutput.innerHTML += num * 2
-    QuebrarLinha(blocoOutput)
+    // blocoOutput.innerHTML += num * 2
+    // QuebrarLinha(blocoOutput)
 
-    var x = PegarNum('Digite o primeiro num:', 0)
-    var y = PegarNum('Digite outro número:', 0)
-    blocoOutput.innerHTML += `A soma de ${x} + ${y} é igual a ${x + y}`
-    QuebrarLinha(blocoOutput)
+    // var x = PegarNum('Digite o primeiro num:', 0)
+    // var y = PegarNum('Digite outro número:', 0)
+    // blocoOutput.innerHTML += `A soma de ${x} + ${y} é igual a ${x + y}`
+    // QuebrarLinha(blocoOutput)
 
-    var valor = PegarNum('Digite o valor do jantar:')
-    var valorFinal = valor + (valor * 0.1)
-    var taxa = valorFinal - valor
-    valor = valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
-    valorFinal = valorFinal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
-    taxa = taxa.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
-    blocoOutput.innerHTML += `Com o jantar sendo R$ ${valor}, o valor final será de R$ ${valorFinal}`
-    QuebrarLinha(blocoOutput)
-    blocoOutput.innerHTML += `Logo, o valor da taxa de 10% do garçom foi de ${taxa}`
-    QuebrarLinha(blocoOutput)
+    // var valor = PegarNum('Digite o valor do jantar:')
+    // var valorFinal = valor + (valor * 0.1)
+    // var taxa = valorFinal - valor
+    // valor = valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    // valorFinal = valorFinal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    // taxa = taxa.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    // blocoOutput.innerHTML += `Com o jantar sendo R$ ${valor}, o valor final será de R$ ${valorFinal}`
+    // QuebrarLinha(blocoOutput)
+    // blocoOutput.innerHTML += `Logo, o valor da taxa de 10% do garçom foi de ${taxa}`
+    // QuebrarLinha(blocoOutput)
 
-    var numero = PegarNum('Digite um valor para ver seus vizinhos:', 0)
-    blocoOutput.innerHTML += `Os vizinhos de ${numero} são ${numero + 1} e ${numero - 1}`
-    QuebrarLinha(blocoOutput)
+    // var numero = parseInt(PegarNum('Digite um valor para ver seus vizinhos:', 0))
+    // blocoOutput.innerHTML += `Os vizinhos de ${numero} são ${numero + 1} e ${numero - 1}`
+    // QuebrarLinha(blocoOutput)
     
+    // var valor = PegarNum('Valor da Conta:', 1)
+    // var qtdPessoas = PegarNum('Quantidade de Pessoas: ', 1)
+    // var valorDividido = valor / qtdPessoas
+    // blocoOutput.innerHTML += `A pizza tem o valor de ${valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}, e dividido entre ${qtdPessoas} o valor será de ${valorDividido.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} para cada um`
 
     function PegarNum(msg, pos) {
         var num = 0
