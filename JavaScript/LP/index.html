@@ -44,6 +44,12 @@
     // var qtdPessoas = PegarNum('Quantidade de Pessoas: ', 1)
     // var valorDividido = valor / qtdPessoas
     // blocoOutput.innerHTML += `A pizza tem o valor de ${valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}, e dividido entre ${qtdPessoas} o valor será de ${valorDividido.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} para cada um`
+    // QuebrarLinha(blocoOutput)
+
+    var preco = PegarNum('Digite o valor do produto', 1)
+    var parcelado = (preco + (preco * 0.1)) / 3
+    var vista = preco - (preco * 0.1)
+    blocoOutput.innerHTML += `O valor do produto é de ${preco.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}<br>À vista: ${vista.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}<br>Parcelado em 3x: ${parcelado.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`
 
     function PegarNum(msg, pos) {
         var num = 0
