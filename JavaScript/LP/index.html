@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    var blocoOutput = document.createElement('div.output')
+    var num = PegarNum('Digite um número positivo:', 1)
+
+    blocoOutput.innerHTML += "O Dobro do número é "
+    document.querySelector('body').appendChild(blocoOutput)
+    blocoOutput.innerHTML += num * 2
+    QuebrarLinha(blocoOutput)
+
+    var x = PegarNum('Digite o primeiro num:', 0)
+    var y = PegarNum('Digite outro número:', 0)
+    blocoOutput.innerHTML += `A soma de ${x} + ${y} é igual a ${x + y}`
+    QuebrarLinha(blocoOutput)
+
+    var valor = PegarNum('Digite o valor do jantar:')
+    var valorFinal = valor + (valor * 0.1)
+    var taxa = valorFinal - valor
+    valor = valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    valorFinal = valorFinal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    taxa = taxa.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    blocoOutput.innerHTML += `Com o jantar sendo R$ ${valor}, o valor final será de R$ ${valorFinal}`
+    QuebrarLinha(blocoOutput)
+    blocoOutput.innerHTML += `Logo, o valor da taxa de 10% do garçom foi de ${taxa}`
+    QuebrarLinha(blocoOutput)
+
+    
+
+    function PegarNum(msg, pos) {
+        var num = 0
+        if (pos == 1) {
+            do {
+                var num = Number(prompt(msg))
+                if (num < 0) {
+                    alert('Digite um número positivo :/')
+                }
+            } while (num < 0)
+        }else{
+            var num = Number(prompt(msg))
+        }
+
+        return num
+    }
+
+    function QuebrarLinha(elemento) {
+        elemento.innerHTML += "<br>"
+    }
+</script>
+
+</html>

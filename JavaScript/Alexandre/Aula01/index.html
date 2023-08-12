@@ -41,15 +41,28 @@
             padding: 5px 10px;
         }
 
-        .label {
-            align-content: flex-start;
-        }
-
         .entrada {
+            justify-self: flex-end;
             border-radius: 5px;
             border: 1px solid #000;
             margin-left: 5px;
             width: 100px;
+        }
+
+        .caixa {
+            display: flex;
+            
+            justify-content: flex-end;
+            width: 30%;
+        }
+        .caixa label {
+            position: absolute;
+            left: 5%;
+        }
+
+        .radio {
+            width: 20px;
+            align-content: center;
         }
 
         .output {
@@ -66,16 +79,26 @@
         <form class="formulario campo">
             <fieldset class="formulario__fieldset">
                 <legend>Dados Pessoais</legend>
-                <label for="nome" class="label">Nome: </label>
-                <input type="text" class="entrada" id="nome" name="nome">
-                <label for="idade" class="label">Idade: </label>
-                <input type="text" class="entrada" id="idade" name="idade">
-                <label for="peso" class="label">Peso: </label>
-                <input type="text" class="entrada" id="peso" name="peso">
-                <label for="empregado" class="label">Empregado: </label>
-                <input type="radio" class="entrada" id="empregado" name="empregado">
-                <label for="desempregado" class="label">Desempregado: </label>
-                <input type="radio" class="entrada" id="desempregado" name="empregado">
+                <div class="caixa">
+                    <label for="nome" class="label">Nome: </label>
+                    <input type="text" class="entrada" id="nome" name="nome">
+                </div>
+                <div class="caixa">
+                    <label for="idade" class="label">Idade: </label>
+                    <input type="text" class="entrada" id="idade" name="idade">
+                </div>
+                <div class="caixa">
+                    <label for="peso" class="label">Peso: </label>
+                    <input type="text" class="entrada" id="peso" name="peso">
+                </div>
+                <div class="caixa">
+                    <label for="empregado" class="label">Empregado: </label>
+                    <input type="radio" class="entrada radio" id="empregado" name="empregado">
+                </div>
+                <div class="caixa">
+                    <label for="desempregado" class="label">Desempregado: </label>
+                    <input type="radio" class="entrada radio" id="desempregado" name="empregado">
+                </div>
             </fieldset>
 
             <input type="button" class="botao" onclick="Cadastrar()" value="Enviar">
