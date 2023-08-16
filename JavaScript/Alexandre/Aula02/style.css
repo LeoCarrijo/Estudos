@@ -1,3 +1,9 @@
+html {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .dados .entrada {
   padding: 10px 5px;
 }
