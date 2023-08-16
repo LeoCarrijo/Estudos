@@ -12,9 +12,12 @@ const divResposta = document.createElement('div')
 // PROCESSAMENTO
 resposta.appendChild(divResposta)
 
+valores[5] = 20
 area = pi * raio * raio
 frase = `${concatenar}, ${nome}!`
 
 // SAIDA
 divResposta.innerHTML += area.toFixed(2) + '<br>'
 divResposta.innerHTML += frase + '<br>'
+divResposta.innerHTML += `${valores[2]}, ${valores[4]} = ${valores[2] + valores[4]}` + '<br>'
+divResposta.innerHTML += `${valores[5]}` + '<br>'
