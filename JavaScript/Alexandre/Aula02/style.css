@@ -9,4 +9,10 @@ html {
 }
 .dados .entrada label {
   padding-right: 5px;
+}
+
+.resposta {
+  background-color: gray;
+  padding: 10px 10px;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
