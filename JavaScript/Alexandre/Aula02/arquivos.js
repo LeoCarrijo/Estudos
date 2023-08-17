@@ -1,9 +1,10 @@
 var opcao = 0
 
 while(opcao != 1) {
-    opcao = GerarInteiro(15)
+    opcao = GerarInteiro(150)
     console.log(`Opção Escolhida foi ${opcao}`)
 }
+console.log('Fim')
 
 function Aprovar(nota) {
     if(nota >= 6) {
