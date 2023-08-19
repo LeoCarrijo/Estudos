@@ -10,6 +10,13 @@
     padding: 10px 0px;
     text-align: center;
     a {
+        text-decoration: none;
         color: white;
+        transition: .3s;
+        &:hover {
+            color: $cor-3;
+            font-size: 1.1em;
+            text-decoration: underline;
+        }
     }
 }
