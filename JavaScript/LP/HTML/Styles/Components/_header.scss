@@ -1,3 +1,11 @@
+@import '../Abstract/variaveis';
+
 .cabecalho {
     text-align: center;
+    background-color: $cor-2;
+    .container__titulo {
+        span {
+            transform: translateY(1px);
+        }
+    }
 }
