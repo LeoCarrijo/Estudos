@@ -5,7 +5,7 @@
     display: grid;
     grid-template-areas: 
     "campo campo campo__lateral";
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     background-color: $cor-2;
     gap: 10px;
     line-height: $altura-linha;
