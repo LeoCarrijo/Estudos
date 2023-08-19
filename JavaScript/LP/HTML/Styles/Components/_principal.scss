@@ -5,8 +5,10 @@
     display: grid;
     grid-template-areas: 
     "campo campo campo__lateral";
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: $cor-2;
     gap: 10px;
+    line-height: $altura-linha;
     @include Colocar-margin;
     @include Colocar-padding;
     @include Colocar-borda;
@@ -17,9 +19,9 @@
         @include Colocar-borda;
     }
     .campo__lateral {
-        @include Colocar-padding;
-        @include Colocar-borda;
         grid-area: campo__lateral;
         background-color: $cor-1;
+        @include Colocar-padding;
+        @include Colocar-borda;
     }
 }
