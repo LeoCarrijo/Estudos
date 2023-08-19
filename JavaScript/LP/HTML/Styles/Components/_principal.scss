@@ -18,6 +18,7 @@
     }
     .campo__lateral {
         @include Colocar-padding;
+        @include Colocar-borda;
         grid-area: campo__lateral;
         background-color: $cor-1;
     }

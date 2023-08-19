@@ -31,6 +31,7 @@
 }
 .principal .campo__lateral {
   padding: 10px;
+  border-radius: 10px;
   grid-area: campo__lateral;
   background-color: #A1CCD1;
 }/*# sourceMappingURL=style.css.map */
