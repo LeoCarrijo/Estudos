@@ -6,6 +6,7 @@
 
 body {
   background-color: #7C9D96;
+  margin-bottom: 40px;
 }
 
 .cabecalho {
@@ -68,13 +69,13 @@ body {
 }
 
 .rodape {
-  position: absolute;
   background-color: #000;
   color: white;
   width: 100vw;
   bottom: 0;
   padding: 10px 0px;
   text-align: center;
+  position: fixed;
 }
 .rodape a {
   text-decoration: none;
