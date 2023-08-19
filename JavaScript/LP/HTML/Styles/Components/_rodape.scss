@@ -1,0 +1,15 @@
+@import '../Abstract/variaveis';
+@import '../Abstract/funcoes';
+
+.rodape {
+    position: absolute;
+    background-color: #000;
+    color: white;
+    width: 100vw;
+    bottom: 0;
+    padding: 10px 0px;
+    text-align: center;
+    a {
+        color: white;
+    }
+}
