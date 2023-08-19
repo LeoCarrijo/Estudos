@@ -1,0 +1,13 @@
+@import './variaveis';
+
+@mixin Colocar-borda {
+    border-radius: $borda-raio;
+}
+
+@mixin Colocar-padding {
+    padding: $padding-padrao;
+}
+
+@mixin Colocar-margin {
+    margin: $margin-padrao;
+}

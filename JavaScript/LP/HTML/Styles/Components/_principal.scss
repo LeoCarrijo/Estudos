@@ -1,5 +1,24 @@
 @import '../Abstract/variaveis';
+@import '../Abstract/funcoes';
 
 .principal {
+    display: grid;
+    grid-template-areas: 
+    "campo campo campo__lateral";
     background-color: $cor-2;
+    gap: 10px;
+    @include Colocar-margin;
+    @include Colocar-padding;
+    @include Colocar-borda;
+    .campo {
+        grid-area: campo;
+        background-color: $cor-1;
+        @include Colocar-padding;
+        @include Colocar-borda;
+    }
+    .campo__lateral {
+        @include Colocar-padding;
+        grid-area: campo__lateral;
+        background-color: $cor-1;
+    }
 }
