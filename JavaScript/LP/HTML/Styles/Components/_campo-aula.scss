@@ -1,0 +1,15 @@
+@import '../Abstract/variaveis';
+@import '../Abstract/funcoes';
+
+.campo__aula {
+    grid-column: 1 / 4;
+    text-align: center;
+    @include Colocar-padding;
+    .imagens {
+        @include Colocar-padding;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        column-gap: 10px;
+    }
+}

@@ -4,6 +4,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  background-color: #7C9D96;
+}
+
 .cabecalho {
   text-align: center;
   background-color: #E9B384;
@@ -34,4 +38,18 @@
   border-radius: 10px;
   grid-area: campo__lateral;
   background-color: #A1CCD1;
+}
+
+.campo__aula {
+  grid-column: 1/4;
+  text-align: center;
+  padding: 10px;
+}
+.campo__aula .imagens {
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }/*# sourceMappingURL=style.css.map */
