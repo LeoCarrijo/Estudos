@@ -59,12 +59,24 @@
                     <label><input type="checkbox" name="check" value="3">Limão</label>
                     <label><input type="checkbox" name="check" value="4">Mexerica</label>
                     <label><input type="checkbox" name="check" value="5">Manga</label>
+                    <br>
+                    <label for="area">Descrição da Vida:</label>
+                    <input type="textarea" name="area" id="area" cols="30" rows="1" placeholder="Insira o Texto">
                 </fieldset>
+                <input type="button" value="Enviar" onclick="Enviar()">
+                <input type="reset" value="Limpar">
             </form>
         </article>
     </main>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum tenetur repudiandae quaerat illum molestiae temporibus ipsa modi quam, quasi laboriosam, animi suscipit dolore esse culpa quisquam nam error nisi illo.
     <footer class="rodape">Criado por <strong><em><a href="https://github.com/LeoCarrijo">@LeoCarrijo</a></em></strong></footer>
 </body>
+
+
+<script>
+    function Enviar(){
+        alert('Formulário Enviado')
+    }
+</script>
+
 
 </html>
