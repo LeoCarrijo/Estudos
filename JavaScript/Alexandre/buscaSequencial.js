@@ -1,4 +1,4 @@
-import { nomes } from '../Data/vetor-nomes.mjs'
+import { nomes } from './Data/vetor-nomes.mjs'
 
 const frutas = ['laranja', 'maçã', 'uva', 'pera', 'jabuticaba', 'limão']
 const valorBuscado = 'uva'
