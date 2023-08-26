@@ -4,49 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <title>Exercício</title>
     <style>
         :root {
-            --ciano: #353535;
-            --padrao: #a0a0a0;
+            --cor-fonte: #353535;
+            --cor-borda: #a0a0a0;
+            --cor-borda-selecionado: #2e79db;
+            --cor-selecionado: #bfdbff;
+            --cor-selecionado-hover: #ebebeb;
         }
-        .lista {
-            margin: 10px 0px;
+
+        * {
+            color: var(--cor-fonte);
         }
-        .lista li {
-            border: 1px solid rgb(47, 78, 79);
-            padding: 3px;
+
+        .listaBonita {
+            list-style-type: none;
+            padding-left: 0px;
+        }
+
+        .listaBonita>li:first-child {
+            border-top-style: solid;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+        .listaBonita>li:last-child {
+            border-bottom-style: solid;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+
+        .listaBonita li {
+            padding: 4px 8px;
+            border-left-style: solid;
+            border-right-style: solid;
+        }
+
+        .selecionado {
+            background-color: var(--cor-selecionado);
+            border-color: var(--cor-borda-selecionado);
+            border-bottom-style: solid;
+        }
+
+        .listaBonita li:hover {
+            background-color: #ebebeb;
         }
     </style>
 </head>
 
-<body class="m-1.5">
-    <ul class="lista">
-        <li class="hover:bg-cyan-100">Item 1</li>
-        <li class="hover:bg-cyan-100">Item 2</li>
-        <li class="hover:bg-cyan-100">Item 3</li>
+<body>
+    <ul class="listaBonita">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
     </ul>
-    <ul class="lista">
-        <li class="bg-cyan-500">Item 4</li>
-        <li class="bg-cyan-500">Item 5</li>
-        <li class="hover:bg-cyan-100">Item 6</li>
+    <ul class="listaBonita">
+        <li class="selecionado">Item 1</li>
+        <li class="selecionado">Item 2</li>
+        <li>Item 3</li>
     </ul>
-    <ul class="lista">
-        <li class="hover:bg-cyan-100">Item 7</li>
-        <li class="bg-cyan-500">Item 8</li>
-        <li class="hover:bg-cyan-100">Item 9</li>
-        <li class="bg-cyan-500">Item 10</li>
-    </ul class="lista">
-    <ul class="lista">
-        <li class="hover:bg-cyan-100">Item 11</li>
+    <ul class="listaBonita">
+        <li>Item 1</li>
+        <li class="selecionado">Item 2</li>
+        <li>Item 3</li>
+        <li class="selecionado">Item 4</li>
     </ul>
-    <ul class="list-disc pl-5">
-        <li>Item 12</li>
-        <li>Item 13</li>
-        <li>Item 14</li>
+    <ul class="listaBonita">
+        <li>Item 1</li>
+    </ul>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
     </ul>
 </body>
 
