@@ -1,6 +1,6 @@
 import {objNomes} from '../Data/vetor-obj-nomes.mjs'
 
-function BuscarBinariamente(fnComp, vetor) {
+function BuscarBinariamente(vetor, fnComp) {
     let inicio = 0, fim = vetor.length - 1
     while(fim >= inicio){
         let meio = Math.floor((inicio + fim) / 2)
@@ -24,4 +24,4 @@ function Comparar(valorMeio, valorBuscado = nome){
     else return -1
 }
 
-console.log(`A posição do first_name == ${nome}: ${BuscarBinariamente(Comparar, objNomes)}`)
+console.log(`A posição do first_name == ${nome}: ${BuscarBinariamente(objNomes, Comparar)}`)
