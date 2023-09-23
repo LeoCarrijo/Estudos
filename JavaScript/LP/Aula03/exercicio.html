@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <style>
+        :root {
+            --cor-fonte: #353535;
+            --cor-borda: #a0a0a0;
+            --cor-borda-selecionado: #2e79db;
+            --cor-selecionado: #bfdbff;
+            --cor-selecionado-hover: #ebebeb;
+        }
+
+        * {
+            color: var(--cor-fonte);
+        }
+
+        .listaBonita {
+            list-style-type: none;
+            padding-left: 0px;
+        }
+
+        .listaBonita>li:first-child {
+            border-top-style: solid;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+        .listaBonita>li:last-child {
+            border-bottom-style: solid;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+
+        .listaBonita li {
+            padding: 4px 8px;
+            border-left-style: solid;
+            border-right-style: solid;
+        }
+
+        .selecionado {
+            background-color: var(--cor-selecionado);
+            border-color: var(--cor-borda-selecionado);
+            border-bottom-style: solid;
+        }
+
+        .listaBonita li:hover:not(.selecionado) {
+            background-color: #ebebeb;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ul class="listaBonita">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <ul class="listaBonita">
+        <li class="selecionado">Item 1</li>
+        <li class="selecionado">Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <ul class="listaBonita">
+        <li>Item 1</li>
+        <li class="selecionado">Item 2</li>
+        <li>Item 3</li>
+        <li class="selecionado">Item 4</li>
+    </ul>
+    <ul class="listaBonita">
+        <li>Item 1</li>
+    </ul>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</body>
+
+</html>

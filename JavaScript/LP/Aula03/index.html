@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Aula 03</title>
+
+    <style>
+        div, p {
+            border: 2px solid #2e79db;
+            margin: 5px;
+        }
+        div ~ div {
+            border-style: dashed;
+        }
+        div + div {
+            border-color: red;
+        }
+    </style>
+</head>
+
+<body class="m-2.5">
+    <h1 class="underline underline-offset-4 text-2xl text-red-500 text-center">Titulo 1</h1>
+    <h2 class="underline underline-offset-4 mb-1.5 text-green-500 text-center border-b-green-500">Título de Tamanho h2</h2>
+    <div class="">Filho 1: div</div>
+    <p>Filho 2: p</p>
+    <div>Filho 3: div</div>
+    <div>
+        Filho 4: div
+        <div>Filho 4.1: div</div>
+    </div>
+</body>
+
+</html>

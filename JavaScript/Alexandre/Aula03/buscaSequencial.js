@@ -1,10 +1,10 @@
-import { nomes } from './Data/vetor-nomes.mjs'
+import { nomes } from '../Data/vetor-nomes.mjs'
 
 const frutas = ['laranja', 'maçã', 'uva', 'pera', 'jabuticaba', 'limão']
 const valorBuscado = 'uva'
 
 function Buscar(valorBuscado, vetor){
-    for(i = 0; i < frutas.length; i++){
+    for(let i = 0; i < frutas.length; i++){
         if(vetor[i] === valorBuscado){
             return i
         }
@@ -17,4 +17,3 @@ function Buscar(valorBuscado, vetor){
 
 console.time('Buscando Leonardo...')
 console.log(`Posição de "LEONARDO": ${Buscar('LEONARDO', nomes)}`)
-console.timeEnd()
