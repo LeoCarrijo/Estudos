@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercados JS</title>
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            line-height: 2rem;
+            padding: 1.3rem 0;
+        }
+
+        #produto, #preco {
+            width: 100px;
+        }
+
+        .botao {
+            padding: 3px 8px;
+            border-radius: 10px;
+            border: 1px solid #000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Supermercados JS</h1>
+    <form>
+        <label for="produto">Produto: </label>
+        <input type="text" name="produto" id="produto" required><br>
+        <label for="preco">Preço: </label>
+        <input type="number" name="preco" id="preco" required><br>
+        <input type="button" value="Ver Promoção" onclick="CalcularPromocao()" class="botao">
+    </form>
+    <div class="reposta">
+        <h2 class="resposta__titulo"></h2>
+    </div>
+
+
+    <script>
+        function CalcularPromocao() {
+            let produto = document.querySelector('input#produto').value
+            let preco = Number(document.querySelector('input#preco').value)
+            let divRes = document.querySelector('h2.resposta__titulo')
+
+            divRes.innerHTML = `${produto} - Promoção: Leve 3 por ${(preco * 2).toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}<br>O 3º produto custa apenas ${(preco / 2).toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`
+        }
+    </script>
+</body>
+
+</html>
