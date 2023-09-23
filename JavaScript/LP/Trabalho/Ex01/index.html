@@ -1,11 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="pt-br">
+
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Restaurante JS</title>
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            padding: 10px;
+        }
+
+        form {
+            line-height: 2rem;
+            padding: 1rem 0;
+        }
+
+        #valor, #consumo {
+            width: 100px;
+        }
+
+        .botao {
+            padding: 3px 8px;
+            border-radius: 10px;
+            border: 1px solid #000;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <h1>Restaurante JS</h1>
+    <form>
+        <label for="valor">Buffet por Quilo R$:</label>
+        <input type="number" name="valor" id="valor" required><br>
+        <label for="consumo">Consumo do Cliente:</label>
+        <input type="number" name="consumo" id="consumo" required><br>
+        <input type="button" value="Calcular Preço" class="botao" onclick="CalcularPreco()">
+    </form>
+    <div class="resposta">
+        <h2 class="resposta__titulo"></h2>
+    </div>
+
+
+    <script>
+        function CalcularPreco(){
+            let valorPorKg = Number(document.querySelector('input#valor').value)
+            let consumo = Number(document.querySelector('input#consumo').value)
+            let valorFinal = (valorPorKg * (consumo / 1000)).toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+            let divRes = document.querySelector('h2.resposta__titulo')
+            
+            divRes.innerHTML = `Valor Total à Pagar: ${valorFinal}`
+        }
+    </script>
 </body>
+
 </html>
