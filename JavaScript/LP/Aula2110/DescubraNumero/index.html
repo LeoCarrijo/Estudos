@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        section h1 {
+            border-bottom: 1px solid black;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./ex5_2.jpg" alt="Jogo dos Números">
+    <section>
+        <h1>Jogo Descubra o Número</h1>
+        <div class="entrada">
+            <label for="num">Número</label>
+            <input type="number" name="num" id="numApostadoInput">
+            <input type="button" value="Apostar" id="btApostar">
+            <input type="button" value="Jogar Novamente" id="btJogarNovamente">
+        </div>
+        <div class="res">
+            <h3>Erros: <span class="erros"></span></h3>
+            <h3>Chances: <span class="chances"></span></h3>
+            <h3 class="dica">É um número entre 1 e 100</h3>
+        </div>
+    </section>
+
+
+    <script>
+        let erros = []
+        let numSorteado = Math.floor(Math.random() * 100) + 1
+        let btApostar = document.querySelector('input#btApostar')
+        let btJogarNovamente = document.querySelector('input#btJogarNovamente')
+        let outErros = document.querySelector('span.erros')
+        let outChances = document.querySelector('span.chances')
+        let outDica = document.querySelector('span.dica')
+        const CHANCES = 6
+
+        function ApostarNumero() {
+            let numApostadoInput = document.querySelector('input#numApostadoInput')
+            let numApostado = numApostadoInput.value
+            if(numApostado <= 0 || numApostado > 100 || isNaN(numApostado)){
+                alert('Informe um número válido')
+                numApostadoInput.focus()
+                return
+            }
+            if(numApostado == numSorteado){
+                alert('Parabéns! Você Acertou!')
+                btApostar.disabled = true
+                outDica.textContent = `Parabéns! Número sorteado: ${numSorteado}`
+            }else{
+                
+            }
+        }
+    </script>
+</body>
+
+</html>
