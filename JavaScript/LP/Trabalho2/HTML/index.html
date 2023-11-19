@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Programa Concurso</title>
+</head>
+<body>
+    <div class="container">
+        <img src="../Images/Concurso.png" alt="" class="imagem">
+        <section class="formulario">
+            <h1 class="titulo">Programa Concurso</h1>
+            <div>
+                <label for="inputCandidato">Nome do Candidato:</label>
+                <input type="text" id="inputCandidato" name="inputCandidato">
+            </div>
+            <div>
+                <label for="inputAcertos">Número de acertos:</label>
+                <input type="text" id="inputAcertos" name="inputAcertos">
+            </div>
+            <div class="botoes">
+                <input type="button" id="btnAdicionar" value="Adicionar">
+                <input type="button" id="btnListar" value="Listar todos">
+                <input type="button" id="btnAprovados" value="Aprovados">
+            </div>
+            <div>
+                <pre id="outAcertos"></pre>
+            </div>
+        </section>
+    </div>
+
+    <script src="../JS/app.js"></script>
+</body>
+</html>
