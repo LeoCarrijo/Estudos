@@ -72,24 +72,28 @@
         </style>
 </head>
 
-<body>
-    <main class="principal">
-        <img class="logo" src="https://raw.githubusercontent.com/LeoCarrijo/Estudos/main/HTML/Intranet/Images/logoTTJ2.jpg" alt="Logo TipToeyJoey">
-        <section class="informacoes">
+<body style="margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif; line-height: 1.3rem;">
+    <main class="principal" style="display: grid; grid-template-areas: 
+    'logo informacoes'
+    'endereco numeros'
+    'descricao descricao'
+    ; grid-template-columns: repeat(2, 500px) auto; gap: 10px 10px;">
+        <img class="logo" src="https://raw.githubusercontent.com/LeoCarrijo/Estudos/main/HTML/Intranet/Images/logoTTJ2.jpg" alt="Logo TipToeyJoey" style="width: 500px; height: 100px; grid-area: logo;">
+        <section class="informacoes" style="display: flex; flex-direction: column; justify-content: center; grid-area: informacoes; width: 250px;">
             <h2>Leonardo Carrijo</h2>
         </section>
-        <div class="numeros">
-            <h2>3707-0661</h2>
-            <h2>3707-5600</h2>
+        <div class="numeros" style="grid-area: numeros; padding: 5px 0px;">
+            <h2 style="padding: 5px 0px;">3707-0661</h2>
+            <h2 style="padding: 5px 0px;">3707-5600</h2>
         </div>
-        <section class="enderecos">
-            <h2>Franca - SP, Rua General Telles 1000</h2>
-            <h2>Franca - SP, Av. dos Sapateiros 1911</h2>
+        <section class="enderecos" style="grid-area: endereco; padding: 5px 0px; padding-left: 10px;">
+            <h2 style="padding: 5px 0px;">Franca - SP, Rua General Telles 1000</h2>
+            <h2 style="padding: 5px 0px;">Franca - SP, Av. dos Sapateiros 1911</h2>
         </section>
-        <section class="descricao">
+        <section class="descricao" style="grid-area: descricao; font-weight: bold; text-align: justify; width: 750px;">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ex perspiciatis atque explicabo provident sint. Voluptate dolorum laborum maiores obcaecati, distinctio atque error inventore quo! Ducimus laudantium mollitia distinctio optio.
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia aliquam alias esse impedit doloremque voluptatibus. Soluta a blanditiis quisquam facilis voluptates rem velit earum, labore consequatur quos! Cum, architecto totam?
-            <p>
+            <p style="color: rgb(255, 193, 101); font-size: 1.5rem; text-align: center; padding: 10px 0px; padding-left: 10px;">
                Think Before Print | Pense antes de imprimir 
             </p>
         </section>
