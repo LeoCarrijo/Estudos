@@ -1,21 +1,21 @@
 function mergeSort(vetor){
 
-    if(vetor.length < 2) return vetor
+    if(vetor.length < 2) return vetor // O(1)
 
-    let meio = Math.floor(vetor.length / 2)
+    let meio = Math.floor(vetor.length / 2) // O(1)*2
 
-    let vetEsq = vetor.slice(0, meio)
-    let vetDir = vetor.slice(meio)
+    let vetEsq = vetor.slice(0, meio) // O(1)*2
+    let vetDir = vetor.slice(meio) // O(1)*2
     
-    vetEsq = mergeSort(vetEsq)
-    vetDir = mergeSort(vetDir)
+    vetEsq = mergeSort(vetEsq) // O(log n)
+    vetDir = mergeSort(vetDir) // O(log n)
 
     
     let posEsq = 0
     let posDir = 0
     let vetRes = []
 
-    while(posEsq < vetEsq.length && posDir < vetDir.length){
+    while(posEsq < vetEsq.length && posDir < vetDir.length){ // O(n)
         if(vetEsq[posEsq] < vetDir[posDir]){
             vetRes.push(vetEsq[posEsq])
             posEsq++
