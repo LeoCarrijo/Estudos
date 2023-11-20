@@ -2,7 +2,7 @@ import { objMotoristas } from "../Data/motoristas-obj-desord.mjs"
 
 function mergeSort(vetor, fnComp){
     if(vetor.length < 2) return vetor
-æ
+
     let meio = Math.floor(vetor.length / 2)
     let vetEsq = vetor.slice(0, meio)
     let vetDir = vetor.slice(meio)
