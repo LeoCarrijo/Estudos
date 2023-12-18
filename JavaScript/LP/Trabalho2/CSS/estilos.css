@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo {
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.container {
+    display: flex;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 10px;
+}
+
+.imagem {
+    width: 300px;
+    height: 300px;
+}
+
+.botoes {
+    text-align: center;
+}
+.botoes input {
+    font-weight: bold;
+    width: 100px;
+    height: 25px;
+    border-radius: 6px;
+    border: 1px solid #000;
+    background-image: linear-gradient(to bottom, rgb(202, 202, 202), rgb(180, 180, 180));
+}
+.botoes input:hover {
+    background-image: linear-gradient(to bottom, rgb(180, 180, 180), rgb(202, 202, 202));
+}
